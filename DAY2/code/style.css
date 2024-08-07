@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #04002a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: white;
+}
+.box {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: rgb(38, 41, 81);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 390px;
+}
+
+.card .pico {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    left: 340px;
+    top: 20px;
+}
+
+.card .pico img {
+    width: 100%;
+    height: 100%;
+}
+
+.card .name {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.card .svoistva {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.card .svoistva span {
+    display: flex;
+    justify-content: space-between;
+}
+.but {
+    display: flex;
+    font-size: 20px;
+    background-color: rgba(27, 32, 75, 0.759);
+    border-radius: 5px;
+    color:  white;
+    margin-bottom: 10px;
+    width: 400px;
+    justify-content: space-between;
+    padding: 15px 5px;
+    border: none;
+    cursor: pointer;
+}
+.but span{
+    font-size: 20px;
+}
+
+.card .status {
+    margin-top: 10px;
+    color: rgb(0, 255, 0);
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+}
+
+.card .pkdiv {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 100%;
+}
+
+.card .pkdiv span{
+    cursor: pointer;
+    font-size: 25px;
+    color: red;
+}
